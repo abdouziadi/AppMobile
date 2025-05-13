@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F2"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Burger Section -->
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drink"
+            app:srcCompat="@mipmap/b1" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="36dp"
+            android:text="Pepsi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="108dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toBottomOf="@+id/drink"
+            app:srcCompat="@mipmap/b3" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView13"
+            app:layout_constraintTop_toBottomOf="@+id/drink"
+            app:srcCompat="@mipmap/b2" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Fanta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="16dp"
+            android:text="Order your meal"
+            android:textColor="#FF6D00"
+            android:textFontWeight="@integer/material_motion_duration_short_2"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/burger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="🍔 Hamburgers"
+            android:textColor="#5D4037"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/burger"
+            app:srcCompat="@mipmap/burger2_foreground" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="48dp"
+            app:layout_constraintStart_toEndOf="@id/imageView6"
+            app:layout_constraintTop_toTopOf="@id/imageView6"
+            app:srcCompat="@mipmap/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="152dp"
+            app:layout_constraintStart_toEndOf="@id/imageView6"
+            app:layout_constraintTop_toTopOf="@id/imageView6"
+            app:srcCompat="@mipmap/burger3_foreground" />
+
+        <CheckBox
+            android:id="@+id/burger1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Classic Burger 8d"
+            app:layout_constraintEnd_toStartOf="@id/burger2"
+            app:layout_constraintStart_toStartOf="@id/imageView6"
+            app:layout_constraintTop_toBottomOf="@id/imageView6" />
+
+        <CheckBox
+            android:id="@+id/burger2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Cheese burger"
+            app:layout_constraintEnd_toStartOf="@id/burger3"
+            app:layout_constraintStart_toEndOf="@id/burger1"
+            app:layout_constraintTop_toBottomOf="@id/imageView2" />
+
+        <CheckBox
+            android:id="@+id/burger3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Chicken Burger"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/burger2"
+            app:layout_constraintTop_toBottomOf="@id/imageView3"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Pizza Section -->
+        <TextView
+            android:id="@+id/pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="🍕 Pizzas"
+            android:textColor="#5D4037"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/burger"
+            app:layout_constraintTop_toBottomOf="@id/burger1" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="87dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pizza"
+            app:srcCompat="@mipmap/p3_background" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="87dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toEndOf="@id/imageView10"
+            app:layout_constraintTop_toTopOf="@id/imageView10"
+            app:srcCompat="@mipmap/p1_background" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="87dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@id/imageView8"
+            app:layout_constraintTop_toTopOf="@id/imageView8"
+            app:srcCompat="@mipmap/p2_background" />
+
+        <CheckBox
+            android:id="@+id/pizza1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Margherita"
+            app:layout_constraintEnd_toStartOf="@id/pizza2"
+            app:layout_constraintStart_toStartOf="@id/imageView10"
+            app:layout_constraintTop_toBottomOf="@id/imageView10" />
+
+        <CheckBox
+            android:id="@+id/pizza2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pepperoni"
+            app:layout_constraintEnd_toStartOf="@id/pizza_four_cheese"
+            app:layout_constraintStart_toEndOf="@id/pizza1"
+            app:layout_constraintTop_toBottomOf="@id/imageView8" />
+
+        <CheckBox
+            android:id="@+id/pizza_four_cheese"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="4 Fromages"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/pizza2"
+            app:layout_constraintTop_toBottomOf="@id/imageView9"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/salad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:text="🥗 Salades"
+            android:textColor="#5D4037"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/pizza"
+            app:layout_constraintTop_toBottomOf="@id/pizza1" />
+
+        <!-- Drink Section -->
+        <TextView
+            android:id="@+id/drink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="640dp"
+            android:text="🥤 Boissons"
+            android:textColor="#5D4037"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/salad"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/salad"
+            app:srcCompat="@mipmap/s" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/salad"
+            app:srcCompat="@mipmap/s1" />
+
+        <CheckBox
+            android:id="@+id/salad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:text="salade césar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <CheckBox
+            android:id="@+id/salad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:text="Salade Mixte"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="116dp"
+            android:layout_marginBottom="5dp"
+            android:text="9dt"
+            android:textColor="@color/red"
+            app:layout_constraintBottom_toTopOf="@+id/pizza"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/burger1"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
